@@ -93,7 +93,7 @@ class _TopBar extends StatelessWidget {
               const SizedBox(width: 12),
               Text(
                 'People',
-                style: GoogleFonts.sfProDisplay(
+                style: GoogleFonts.lato( // <--- تم التصحيح هنا
                   fontSize: 30,
                   fontWeight: FontWeight.w700,
                   color: Colors.black,
@@ -128,7 +128,7 @@ class _SearchBar extends StatelessWidget {
       child: TextField(
         decoration: InputDecoration(
           hintText: 'Search',
-          hintStyle: GoogleFonts.sfProText(
+          hintStyle: GoogleFonts.lato( // <--- تم التصحيح هنا
             color: const Color(0xFF8E8E93),
             fontSize: 17,
           ),
@@ -175,14 +175,14 @@ class _YourStoryTile extends StatelessWidget {
                 children: [
                   Text(
                     'Your story',
-                    style: GoogleFonts.sfProText(
+                    style: GoogleFonts.lato( // <--- تم التصحيح هنا
                         fontSize: 17,
                         fontWeight: FontWeight.w500,
                         color: Colors.black),
                   ),
                   Text(
                     'Add to your story',
-                    style: GoogleFonts.sfProText(
+                    style: GoogleFonts.lato( // <--- تم التصحيح هنا
                         fontSize: 13,
                         fontWeight: FontWeight.w400,
                         color: Colors.black.withOpacity(0.5)),
@@ -256,7 +256,7 @@ class _PersonTile extends StatelessWidget {
                         ),
                         child: Text(
                           status!,
-                          style: GoogleFonts.sfProText(
+                          style: GoogleFonts.lato( // <--- تم التصحيح هنا
                               fontSize: 8,
                               fontWeight: FontWeight.w500,
                               color: Colors.black),
@@ -269,7 +269,7 @@ class _PersonTile extends StatelessWidget {
               Expanded(
                 child: Text(
                   name,
-                  style: GoogleFonts.sfProText(
+                  style: GoogleFonts.lato( // <--- تم التصحيح هنا
                       fontSize: 17,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
@@ -331,7 +331,7 @@ class _SectionHeader extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
       child: Text(
         title,
-        style: GoogleFonts.sfProText(
+        style: GoogleFonts.lato( // <--- تم التصحيح هنا
           fontSize: 13,
           fontWeight: FontWeight.w500,
           color: Colors.black.withOpacity(0.34),
@@ -361,7 +361,7 @@ class _BottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String currentPath = GoRouterState.of(context).uri.toString();
-    int currentIndex = 1; 
+    int currentIndex = 1;
 
     if (currentPath == '/messanger_swipe_actions') {
       currentIndex = 0;
